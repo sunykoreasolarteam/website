@@ -6,11 +6,14 @@ const TOTAL_FRAMES = 36;
 // Import all 36 frames using Vite's glob import (outside component to avoid re-creation)
 const framePaths = import.meta.glob('../assets/36frame-turntable/frame.*.png', { eager: true, as: 'url' });
 
-// Create an ordered array of the URLs
-const imagePaths = Array.from({ length: TOTAL_FRAMES }, (_, i) => {
-  const keyMatch = Object.keys(framePaths).find(key => key.includes(`frame.${i}.png`));
-  return framePaths[keyMatch];
-});
+// Create an ordered array of the URLs by extracting the number from the key
+const imagePaths = Object.entries(framePaths)
+  .sort(([keyA], [keyB]) => {
+    const numA = parseInt(keyA.match(/frame\.(\d+)\.png/i)[1], 10);
+    const numB = parseInt(keyB.match(/frame\.(\d+)\.png/i)[1], 10);
+    return numA - numB;
+  })
+  .map(([_, url]) => url);
 
 const Car = () => {
   const [currentFrame, setCurrentFrame] = useState(0);

@@ -6,12 +6,12 @@ import renderPreviewImg from '../assets/render-preview.png';
 
 // Dynamically load all sponsor logos from asset folders
 const allSponsorModules = {
-  ...import.meta.glob('../assets/sponsors/principle-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/technical-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/industry-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/academic-support/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
+  ...import.meta.glob('../assets/sponsors/principle-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
+  ...import.meta.glob('../assets/sponsors/technical-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
+  ...import.meta.glob('../assets/sponsors/industry-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
+  ...import.meta.glob('../assets/sponsors/academic-support/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
 };
-const allSponsorLogos = Object.values(allSponsorModules).map((mod) => mod.default || mod);
+const allSponsorLogos = Object.values(allSponsorModules);
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
