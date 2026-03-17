@@ -1,8 +1,12 @@
-import React from 'react';
 import { Mail, Briefcase, Users, BookOpen, Instagram, Linkedin, MapPin, ArrowUpRight } from 'lucide-react';
 import './Contact.css';
 
-const Contact = () => {
+export const metadata = {
+  title: 'Contact Us | SUNY Korea Solar Team',
+  description: 'Reach out for general inquiries, sponsorship opportunities, or education initiatives.',
+};
+
+export default function Contact() {
   return (
     <div className="contact-page container">
       <header className="contact-header">
@@ -88,6 +92,4 @@ const Contact = () => {
       </section>
     </div>
   );
-};
-
-export default Contact;
+}

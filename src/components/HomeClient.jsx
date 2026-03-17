@@ -1,20 +1,10 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import './Home.css';
-import carRenderImg from "../assets/car-render.PNG";
-import renderPreviewImg from '../assets/render-preview.png';
+import Link from 'next/link';
+import '../app/Home.css';
 
-// Dynamically load all sponsor logos from asset folders
-const allSponsorModules = {
-  ...import.meta.glob('../assets/sponsors/principle-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
-  ...import.meta.glob('../assets/sponsors/technical-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
-  ...import.meta.glob('../assets/sponsors/industry-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
-  ...import.meta.glob('../assets/sponsors/academic-support/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
-};
-const allSponsorLogos = Object.values(allSponsorModules).map(mod => mod.default || mod);
-
-const Home = () => {
+const HomeClient = ({ allSponsorLogos }) => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -37,19 +27,9 @@ const Home = () => {
 
   // Tiered opacities based on scroll position
   const maxScroll = typeof window !== 'undefined' ? window.innerHeight : 800;
-
-  // 1. Dark Overlay: Keeps car visible longer, reaches max darkness further down
   const overlayOpacity = Math.min(scrollY / (maxScroll * 1.5), 0.95);
-
-  // 2. Title: Appears as soon as user starts scrolling
-  // Fades in from scroll 50px to 350px
   const titleOpacity = Math.min(Math.max((scrollY - 50) / 300, 0), 1);
-
-  // 3. Subtitle & Actions: Appears significantly after the title
-  // Fades in from scroll 650px to 950px (gives the title much more dedicated space)
   const contentOpacity = Math.min(Math.max((scrollY - 650) / 300, 0), 1);
-
-  // 4. About Us: Appears as the Hero section scrolls up
   const aboutOpacity = Math.min(Math.max((scrollY - maxScroll + 200) / 300, 0), 1);
 
   return (
@@ -58,7 +38,7 @@ const Home = () => {
       <div className="fixed-scene">
         <div className="car-container">
           <img 
-            src={carRenderImg} 
+            src="/assets/car-render.PNG"
             alt="Solar Car Render" 
             className="center-car-img" 
             onError={(e) => { e.target.src = 'https://via.placeholder.com/1200x500/0a0a0a/E59E58?text=Solar+Car'; }} 
@@ -72,8 +52,6 @@ const Home = () => {
 
       {/* Scrolling Content */}
       <div className="scrolling-content">
-        
-        {/* Placeholder spacer to allow scrolling before hero content appears */}
         <div className="initial-scroll-spacer"></div>
 
         {/* Hero Section */}
@@ -94,8 +72,8 @@ const Home = () => {
                   We are a student-led international engineering team developing a solar race vehicle aimed at competing in the Bridgestone World Solar Challenge.
                 </p>
                 <div className="hero-actions">
-                  <Link to="/sponsors" className="btn btn-primary btn-orange">Sponsor</Link>
-                  <Link to="/join" className="btn btn-outline btn-white">Join</Link>
+                  <Link href="/sponsors" className="btn btn-primary btn-orange">Sponsor</Link>
+                  <Link href="/join" className="btn btn-outline btn-white">Join</Link>
                 </div>
               </div>
             </div>
@@ -159,14 +137,14 @@ const Home = () => {
             
             <div className="preview-image-container mb-space">
               <img 
-                src={renderPreviewImg} 
+                src="/assets/render-preview.png"
                 alt="Solar Car Render Preview" 
                 className="preview-image"
                 onError={(e) => { e.target.src = 'https://via.placeholder.com/1000x500/0a0a0a/E59E58?text=Vehicle+Render'; }} 
               />
             </div>
 
-            <Link to="/car" className="btn btn-outline btn-white mt-space">
+            <Link href="/car" className="btn btn-outline btn-white mt-space">
               View the Car <ArrowRight size={20} />
             </Link>
           </div>
@@ -188,7 +166,7 @@ const Home = () => {
               <div className="discipline-tag">Education</div>
               <div className="discipline-tag">Media</div>
             </div>
-            <Link to="/team" className="btn btn-outline btn-white mt-space">
+            <Link href="/team" className="btn btn-outline btn-white mt-space">
               Meet the Team <ArrowRight size={20} />
             </Link>
           </div>
@@ -201,7 +179,7 @@ const Home = () => {
             <p className="scroll-paragraph mb-space">
               The team supports engineering education through outreach programs, workshops, and hands-on learning opportunities designed to introduce students and the broader community to engineering, renewable energy, and solar vehicle technology.
             </p>
-            <Link to="/education" className="btn btn-outline btn-white mt-space">
+            <Link href="/education" className="btn btn-outline btn-white mt-space">
               Education Programs <ArrowRight size={20} />
             </Link>
           </div>
@@ -225,7 +203,7 @@ const Home = () => {
                 <p className="scroll-paragraph">Sponsorship opportunities available.</p>
               )}
             </div>
-            <Link to="/sponsors" className="btn btn-outline btn-white mt-space">
+            <Link href="/sponsors" className="btn btn-outline btn-white mt-space">
               View All Sponsors <ArrowRight size={20} />
             </Link>
           </div>
@@ -239,8 +217,8 @@ const Home = () => {
               Join us in pushing the boundaries of sustainable technology or support our mission to build a world-class solar racing vehicle.
             </p>
             <div className="hero-actions flex-center mt-space">
-              <Link to="/contact" className="btn btn-primary btn-orange">Sponsor</Link>
-              <Link to="/join" className="btn btn-outline btn-white">Join</Link>
+              <Link href="/contact" className="btn btn-primary btn-orange">Sponsor</Link>
+              <Link href="/join" className="btn btn-outline btn-white">Join</Link>
             </div>
           </div>
         </section>
@@ -250,4 +228,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeClient;

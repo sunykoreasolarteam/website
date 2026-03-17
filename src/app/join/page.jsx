@@ -1,8 +1,12 @@
-import React from 'react';
 import './Join.css';
 import { Settings, Wind, Zap, Terminal, Briefcase, BookOpen, Camera, Hammer, Users, Lightbulb, ArrowRight, Globe } from 'lucide-react';
 
-const Join = () => {
+export const metadata = {
+  title: 'Join the Team | SUNY Korea Solar Team',
+  description: 'Apply to join our student-led engineering project. Gain hands-on experience in mechanical, electrical, software, and business disciplines.',
+};
+
+export default function Join() {
   return (
     <div className="join-page container">
       <header className="join-header">
@@ -99,6 +103,4 @@ const Join = () => {
       </section>
     </div>
   );
-};
-
-export default Join;
+}

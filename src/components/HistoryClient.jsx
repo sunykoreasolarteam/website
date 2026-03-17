@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from 'react';
-import './History.css';
+import '../app/history/History.css';
 
 const TimelineNode = ({ year, title, desc, details, isFuture }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -26,7 +27,7 @@ const TimelineNode = ({ year, title, desc, details, isFuture }) => {
         <div className={`timeline-details ${isExpanded ? 'expanded' : ''}`}>
           <ul>
             {details.map((item, idx) => (
-              <li key={idx}>{item}</li>
+               <li key={idx}>{item}</li>
             ))}
           </ul>
         </div>
@@ -35,7 +36,7 @@ const TimelineNode = ({ year, title, desc, details, isFuture }) => {
   );
 };
 
-const History = () => {
+const HistoryClient = () => {
   return (
     <div className="history-page">
       <div className="container history-container">
@@ -45,7 +46,6 @@ const History = () => {
         </p>
 
         <div className="history-timeline-placeholder">
-          {/* Completed Milestones (Solid Orange Circle) */}
           <TimelineNode 
             year="2025"
             title="Project Inception"
@@ -70,7 +70,6 @@ const History = () => {
             ]}
           />
           
-          {/* Future Milestones (Hollow White Circle) */}
           <TimelineNode 
             year="2027 - 2028"
             title="Manufacturing & Testing"
@@ -101,4 +100,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default HistoryClient;

@@ -1,36 +1,18 @@
+"use client"
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Sponsors.css';
-
-// Dynamically load images from the specific sponsorship tier folders
-const principleModules = import.meta.glob('../assets/sponsors/principle-partners/*.*', { eager: true });
-const technicalModules = import.meta.glob('../assets/sponsors/technical-partners/*.*', { eager: true });
-const industryModules = import.meta.glob('../assets/sponsors/industry-partners/*.*', { eager: true });
-const academicModules = import.meta.glob('../assets/sponsors/academic-support/*.*', { eager: true });
-
-// Helper function to extract array of image URLs
-const extractImages = (modules) => {
-  return Object.values(modules).map((mod) => mod.default || mod);
-};
-
-const principleLogos = extractImages(principleModules);
-const technicalLogos = extractImages(technicalModules);
-const industryLogos = extractImages(industryModules);
-const academicLogos = extractImages(academicModules);
+import Link from 'next/link';
+import '../app/sponsors/Sponsors.css';
 
 const SponsorCard = ({ src, title, index }) => {
   const [description, setDescription] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
-    // Fetch the image file as text to extract raw XMP metadata (Windows EXIF Comments)
     fetch(src)
       .then(res => res.text())
       .then(text => {
-        // Look for the exif:UserComment inside the XMP RDF XML wrapper
         const match = text.match(/<exif:UserComment>[\s\S]*?<rdf:li[^>]*>([\s\S]*?)<\/rdf:li>/);
         if (match && match[1]) {
-          // Clean up newlines or extra spaces injected by the XML
           setDescription(match[1].replace(/&#xA;/g, '\n').trim());
         }
       })
@@ -81,18 +63,16 @@ const SponsorCategory = ({ title, logos }) => {
   );
 };
 
-const Sponsors = () => {
+const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academicLogos }) => {
   return (
     <div className="sponsors-page">
       <div className="container sponsors-container">
         
-        {/* Hero Section */}
         <section className="sponsors-hero-section">
           <h1 className="sponsors-hero-title">Driving Forward Together</h1>
           <p className="sponsors-hero-subtitle">Engineering the future of sustainable mobility, empowered by our dedicated partners.</p>
         </section>
 
-        {/* Our Partners Intro */}
         <section className="sponsors-intro-section">
           <h2 className="section-heading">Our Partners</h2>
           <p className="sponsors-intro-text">
@@ -100,7 +80,6 @@ const Sponsors = () => {
           </p>
         </section>
 
-        {/* Sponsor Grids */}
         <section className="sponsors-grids-section">
           <SponsorCategory title="Principle Partners" logos={principleLogos} />
           <SponsorCategory title="Technical Partners" logos={technicalLogos} />
@@ -108,14 +87,13 @@ const Sponsors = () => {
           <SponsorCategory title="Academic Support" logos={academicLogos} />
         </section>
 
-        {/* Sponsor Call to Action */}
         <section className="sponsors-cta-section">
           <div className="sponsors-cta-box">
             <h2 className="sponsors-cta-heading">Join Our Mission</h2>
             <p className="sponsors-cta-text">
               We welcome partnerships with organizations passionate about supporting student-led engineering, advancing sustainable mobility, and investing in the next generation of technical innovators. Collaborate with us and become a crucial part of our journey to the Bridgestone World Solar Challenge.
             </p>
-            <Link to="/contact" className="btn btn-primary sponsors-cta-btn">
+            <Link href="/contact" className="btn btn-primary sponsors-cta-btn">
               Become a Sponsor
             </Link>
           </div>
@@ -126,4 +104,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default SponsorsClient;

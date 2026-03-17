@@ -1,7 +1,11 @@
-import React from 'react';
 import './Media.css';
 
-const Media = () => {
+export const metadata = {
+  title: 'Media | SUNY Korea Solar Team',
+  description: 'View the latest media, photography, and press releases covering the progress of the SUNY Korea Solar Team.',
+};
+
+export default function Media() {
   return (
     <div className="media-page">
       <div className="container media-container">
@@ -14,6 +18,4 @@ const Media = () => {
       </div>
     </div>
   );
-};
-
-export default Media;
+}

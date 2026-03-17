@@ -1,7 +1,11 @@
-import React from 'react';
 import './Education.css';
 
-const Education = () => {
+export const metadata = {
+  title: 'Education Initiative | SUNY Korea Solar Team',
+  description: 'Join our parametric CAD and digital prototyping curriculum to start your engineering journey.',
+};
+
+export default function Education() {
   return (
     <div className="education-page">
       <div className="container education-container">
@@ -19,6 +23,4 @@ const Education = () => {
       </div>
     </div>
   );
-};
-
-export default Education;
+}
