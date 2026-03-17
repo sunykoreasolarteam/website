@@ -1,0 +1,200 @@
+.car-page {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+}
+
+/* Turntable Scrolling Area */
+.turntable-section {
+  position: relative;
+  /* 800vh gives plenty of scroll room to advance through all phases and hold at the end smoothly */
+  height: 800vh; 
+  background-color: #0a0a0a; /* Dark gray for seamless blend with app bg */
+}
+
+.sticky-viewer {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.car-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5; /* Car is above the SAMJOK-O text (z-index 1) but below the Intro text (z-index 10) */
+}
+
+.turntable-image {
+  width: 100%;
+  max-width: 1800px;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.car-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.loading-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-accent-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Intro Text (The Car) positioned exactly in the center over the car */
+.turntable-intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 var(--space-4);
+  z-index: 10;
+  transition: opacity 0.1s ease-out;
+}
+
+/* SAMJOK-O I name appearing above the car */
+.turntable-name-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 10; 
+  transition: opacity 0.1s ease-out;
+}
+
+.car-model-name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  color: var(--color-accent-primary);
+  margin: 0 0 var(--space-4) 0;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.car-model-desc {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.car-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: var(--space-2);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.car-page-intro {
+  font-size: clamp(1.125rem, 2vw, 1.35rem);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+/* Content Below Turntable */
+.car-details-section {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  background-color: var(--color-bg-primary); /* return to 0a0a0a */
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: var(--space-8);
+  color: var(--color-text-primary);
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.goal-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: var(--space-6);
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goal-card:hover {
+    transform: none;
+  }
+}
+
+.goal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent-primary);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-display);
+}
+
+.goal-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.development-approach-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.approach-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* Utils */
+.mb-space { margin-bottom: var(--space-8); }
+.mb-large { margin-bottom: var(--space-16); }
+.text-center { text-align: center; }
