@@ -13,33 +13,20 @@
   --space-12: 96px;
   --space-16: 128px;
 
-  /* Colors (Light Theme Base) */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f4f5f7;
-  --color-text-primary: #111827;
-  --color-text-secondary: #4b5563;
+  /* Colors (Forced Dark Theme) */
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #171717;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #d1d5db;
   --color-accent-primary: #d49a62; /* Golden Tan from Logo */
   --color-accent-secondary: #1a1a1a;
-  --color-border: #e5e7eb;
-  
-  --navbar-bg: rgba(255, 255, 255, 0.9);
+  --color-border: #262626;
+
+  --navbar-bg: rgba(10, 10, 10, 0.85);
   
   /* Typography */
   --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Colors (Dark Theme) */
-    --color-bg-primary: #0a0a0a;
-    --color-bg-secondary: #171717;
-    --color-text-primary: #f8fafc;
-    --color-text-secondary: #d1d5db;
-    --color-border: #262626;
-    
-    --navbar-bg: rgba(10, 10, 10, 0.85);
-  }
 }
 
 /* Base Styles */
