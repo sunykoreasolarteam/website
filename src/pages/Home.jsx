@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import './Home.css';
-import carRenderImg from '../assets/car-render.png';
+import carRenderImg from "../assets/car-render.PNG";
 import renderPreviewImg from '../assets/render-preview.png';
 
 // Dynamically load all sponsor logos from asset folders
