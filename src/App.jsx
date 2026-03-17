@@ -1,14 +1,23 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Join from './pages/Join';
 import Car from './pages/Car';
 import Contact from './pages/Contact';
 import './App.css';
 import logoImg from './assets/Home-Logo.png';
-import { Link } from 'react-router-dom';
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+
+// Scroll Restoration Component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 // Layout
 function Layout({ children }) {
@@ -77,19 +86,22 @@ import Media from './pages/Media';
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/car" element={<Car />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/join" element={<Join />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/media" element={<Media />} />
-      </Routes>
-    </Layout>
+    <>
+      <ScrollToTop />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/car" element={<Car />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/media" element={<Media />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 
