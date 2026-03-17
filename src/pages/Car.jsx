@@ -8,8 +8,8 @@ const framePaths = import.meta.glob('../assets/36frame-turntable/frame.*.png', {
 
 // Create an ordered array of the URLs
 const imagePaths = Array.from({ length: TOTAL_FRAMES }, (_, i) => {
-  const key = `../assets/36frame-turntable/frame.${i}.png`;
-  return framePaths[key];
+  const keyMatch = Object.keys(framePaths).find(key => key.includes(`frame.${i}.png`));
+  return framePaths[keyMatch];
 });
 
 const Car = () => {

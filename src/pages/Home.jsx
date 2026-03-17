@@ -6,10 +6,10 @@ import renderPreviewImg from '../assets/render-preview.png';
 
 // Dynamically load all sponsor logos from asset folders
 const allSponsorModules = {
-  ...import.meta.glob('../assets/sponsors/principle-partners/*.*', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/technical-partners/*.*', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/industry-partners/*.*', { eager: true }),
-  ...import.meta.glob('../assets/sponsors/academic-support/*.*', { eager: true }),
+  ...import.meta.glob('../assets/sponsors/principle-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
+  ...import.meta.glob('../assets/sponsors/technical-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
+  ...import.meta.glob('../assets/sponsors/industry-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
+  ...import.meta.glob('../assets/sponsors/academic-support/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true }),
 };
 const allSponsorLogos = Object.values(allSponsorModules).map((mod) => mod.default || mod);
 
