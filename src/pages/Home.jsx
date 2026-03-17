@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import carRenderImg from "../assets/car-render.PNG";
 import renderPreviewImg from '../assets/render-preview.png';
@@ -93,8 +94,8 @@ const Home = () => {
                   We are a student-led international engineering team developing a solar race vehicle aimed at competing in the Bridgestone World Solar Challenge.
                 </p>
                 <div className="hero-actions">
-                  <a href="/sponsors" className="btn btn-primary btn-orange">Sponsor</a>
-                  <a href="/join" className="btn btn-outline btn-white">Join</a>
+                  <Link to="/sponsors" className="btn btn-primary btn-orange">Sponsor</Link>
+                  <Link to="/join" className="btn btn-outline btn-white">Join</Link>
                 </div>
               </div>
             </div>
@@ -165,9 +166,9 @@ const Home = () => {
               />
             </div>
 
-            <a href="/car" className="btn btn-outline btn-white mt-space">
+            <Link to="/car" className="btn btn-outline btn-white mt-space">
               View the Car <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -187,9 +188,9 @@ const Home = () => {
               <div className="discipline-tag">Education</div>
               <div className="discipline-tag">Media</div>
             </div>
-            <a href="/team" className="btn btn-outline btn-white mt-space">
+            <Link to="/team" className="btn btn-outline btn-white mt-space">
               Meet the Team <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -200,9 +201,9 @@ const Home = () => {
             <p className="scroll-paragraph mb-space">
               The team supports engineering education through outreach programs, workshops, and hands-on learning opportunities designed to introduce students and the broader community to engineering, renewable energy, and solar vehicle technology.
             </p>
-            <a href="/education" className="btn btn-outline btn-white mt-space">
+            <Link to="/education" className="btn btn-outline btn-white mt-space">
               Education Programs <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -224,9 +225,9 @@ const Home = () => {
                 <p className="scroll-paragraph">Sponsorship opportunities available.</p>
               )}
             </div>
-            <a href="/sponsors" className="btn btn-outline btn-white mt-space">
+            <Link to="/sponsors" className="btn btn-outline btn-white mt-space">
               View All Sponsors <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -238,8 +239,8 @@ const Home = () => {
               Join us in pushing the boundaries of sustainable technology or support our mission to build a world-class solar racing vehicle.
             </p>
             <div className="hero-actions flex-center mt-space">
-              <a href="/contact" className="btn btn-primary btn-orange">Sponsor</a>
-              <a href="/join" className="btn btn-outline btn-white">Join</a>
+              <Link to="/contact" className="btn btn-primary btn-orange">Sponsor</Link>
+              <Link to="/join" className="btn btn-outline btn-white">Join</Link>
             </div>
           </div>
         </section>

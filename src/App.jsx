@@ -7,31 +7,52 @@ import './App.css';
 import logoImg from './assets/Home-Logo.png';
 import { Link } from 'react-router-dom';
 
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+
 // Layout
 function Layout({ children }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Close menu when navigating
+  const closeMenu = () => setIsMobileMenuOpen(false);
+
   return (
     <div className="app-layout">
       <nav className="navbar">
         <div className="nav-container container">
-          <Link to="/" className="nav-brand">
+          <Link to="/" className="nav-brand" onClick={closeMenu}>
             <img 
               src={logoImg} 
               alt="SUNY Korea Solar Team Logo" 
               className="nav-logo-icon"
             />
           </Link>
-          <div className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/sponsors">Sponsors</Link>
-            <Link to="/team">Team</Link>
-            <Link to="/car">The Car</Link>
-            <Link to="/history">History</Link>
-            <Link to="/education">Education</Link>
-            <Link to="/media">Media</Link>
-          </div>
-          <div className="nav-actions">
-            <Link to="/join" className="btn btn-secondary">Join Us</Link>
-            <Link to="/contact" className="btn btn-primary">Contact</Link>
+          
+          {/* Mobile Toggle Button */}
+          <button 
+            className="mobile-menu-toggle" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Navigation Links */}
+          <div className={`nav-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+            <div className="nav-links">
+              <Link to="/" onClick={closeMenu}>Home</Link>
+              <Link to="/sponsors" onClick={closeMenu}>Sponsors</Link>
+              <Link to="/team" onClick={closeMenu}>Team</Link>
+              <Link to="/car" onClick={closeMenu}>The Car</Link>
+              <Link to="/history" onClick={closeMenu}>History</Link>
+              <Link to="/education" onClick={closeMenu}>Education</Link>
+              <Link to="/media" onClick={closeMenu}>Media</Link>
+            </div>
+            <div className="nav-actions">
+              <Link to="/join" className="btn btn-secondary" onClick={closeMenu}>Join Us</Link>
+              <Link to="/contact" className="btn btn-primary" onClick={closeMenu}>Contact</Link>
+            </div>
           </div>
         </div>
       </nav>
