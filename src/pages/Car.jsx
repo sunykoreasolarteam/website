@@ -13,7 +13,7 @@ const imagePaths = Object.entries(framePaths)
     const numB = parseInt(keyB.match(/frame\.(\d+)\.png/i)[1], 10);
     return numA - numB;
   })
-  .map(([_, url]) => url);
+  .map(([_, mod]) => mod.default || mod);
 
 const Car = () => {
   const [currentFrame, setCurrentFrame] = useState(0);

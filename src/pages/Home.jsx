@@ -11,7 +11,7 @@ const allSponsorModules = {
   ...import.meta.glob('../assets/sponsors/industry-partners/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
   ...import.meta.glob('../assets/sponsors/academic-support/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG}', { eager: true, as: 'url' }),
 };
-const allSponsorLogos = Object.values(allSponsorModules);
+const allSponsorLogos = Object.values(allSponsorModules).map(mod => mod.default || mod);
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
