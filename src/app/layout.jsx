@@ -8,6 +8,11 @@ export const metadata = {
   openGraph: {
     title: 'SUNY Korea Solar Team',
     description: 'Designing and building solar-powered vehicles for global competition.',
+  },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   }
 };
 
