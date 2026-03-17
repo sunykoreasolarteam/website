@@ -4,6 +4,8 @@ import Join from './pages/Join';
 import Car from './pages/Car';
 import Contact from './pages/Contact';
 import './App.css';
+import logoImg from './assets/Home-Logo.png';
+import { Link } from 'react-router-dom';
 
 // Layout
 function Layout({ children }) {
@@ -11,25 +13,25 @@ function Layout({ children }) {
     <div className="app-layout">
       <nav className="navbar">
         <div className="nav-container container">
-          <a href="/" className="nav-brand">
+          <Link to="/" className="nav-brand">
             <img 
-              src="/src/assets/Home-Logo.png" 
+              src={logoImg} 
               alt="SUNY Korea Solar Team Logo" 
               className="nav-logo-icon"
             />
-          </a>
+          </Link>
           <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/sponsors">Sponsors</a>
-            <a href="/team">Team</a>
-            <a href="/car">The Car</a>
-            <a href="/history">History</a>
-            <a href="/education">Education</a>
-            <a href="/media">Media</a>
+            <Link to="/">Home</Link>
+            <Link to="/sponsors">Sponsors</Link>
+            <Link to="/team">Team</Link>
+            <Link to="/car">The Car</Link>
+            <Link to="/history">History</Link>
+            <Link to="/education">Education</Link>
+            <Link to="/media">Media</Link>
           </div>
           <div className="nav-actions">
-            <a href="/join" className="btn btn-secondary">Join Us</a>
-            <a href="/contact" className="btn btn-primary">Contact</a>
+            <Link to="/join" className="btn btn-secondary">Join Us</Link>
+            <Link to="/contact" className="btn btn-primary">Contact</Link>
           </div>
         </div>
       </nav>
