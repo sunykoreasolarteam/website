@@ -1,0 +1,46 @@
+/* [project]/src/app/team/Team.css [app-client] (css) */
+.team-page {
+  padding-top: 150px;
+  padding-bottom: var(--space-16);
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  flex-direction: column;
+  display: flex;
+}
+
+.team-container {
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.team-page-title {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-8);
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+}
+
+.team-placeholder-box {
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  border: 1px dashed #fff3;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.team-placeholder-text {
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=src_app_team_Team_14e46de0.css.map*/

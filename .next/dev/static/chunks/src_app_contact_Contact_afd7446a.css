@@ -1,0 +1,182 @@
+/* [project]/src/app/contact/Contact.css [app-client] (css) */
+.contact-page {
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-12);
+}
+
+.contact-title {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-primary);
+  letter-spacing: -.02em;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+}
+
+.text-accent {
+  color: var(--color-accent-primary);
+}
+
+.contact-intro {
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.contact-cards-section {
+  margin-bottom: var(--space-16);
+}
+
+.contact-grid {
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.contact-card {
+  background: var(--color-bg-secondary);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  color: inherit;
+  border-radius: 12px;
+  align-items: flex-start;
+  text-decoration: none;
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+  display: flex;
+  position: relative;
+}
+
+.contact-card:hover {
+  border-color: var(--color-accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #0000000d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card:hover {
+    transform: none;
+  }
+}
+
+.card-icon-wrapper {
+  background: var(--color-bg-primary);
+  padding: var(--space-3);
+  margin-right: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-icon {
+  color: var(--color-accent-primary);
+  width: 24px;
+  height: 24px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-title {
+  margin-bottom: var(--space-1);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card-desc {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.card-email {
+  font-family: var(--font-sans);
+  color: var(--color-accent-primary);
+  font-size: .95rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.card-arrow {
+  top: var(--space-4);
+  right: var(--space-4);
+  color: var(--color-text-secondary);
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  position: absolute;
+  transform: translate(-4px, 4px);
+}
+
+.contact-card:hover .card-arrow {
+  opacity: 1;
+  color: var(--color-accent-primary);
+  transform: translate(0);
+}
+
+.social-section {
+  text-align: center;
+  max-width: 600px;
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+  margin: 0 auto;
+}
+
+.social-title {
+  margin-bottom: var(--space-6);
+  color: var(--color-text-primary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.social-links {
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  display: flex;
+}
+
+.social-link {
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color .3s, color .3s;
+  display: flex;
+}
+
+.social-link:hover {
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  border-color: var(--color-text-primary);
+}
+
+.location-info {
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: .95rem;
+  display: flex;
+}
+
+.location-icon {
+  color: var(--color-accent-primary);
+}
+
+/*# sourceMappingURL=src_app_contact_Contact_afd7446a.css.map*/

@@ -1,0 +1,94 @@
+/* [project]/src/app/education/Education.css [app-client] (css) */
+.education-page {
+  padding-top: 150px;
+  padding-bottom: var(--space-16);
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  flex-direction: column;
+  display: flex;
+}
+
+.education-container {
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.education-title {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-8);
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+}
+
+.education-placeholder-box {
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  border: 1px dashed #fff3;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.education-placeholder-heading {
+  color: #fff;
+  margin-bottom: var(--space-4);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.education-placeholder-text {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.education-apply-btn {
+  font-family: var(--font-sans);
+  color: var(--color-accent-primary);
+  border: 2px solid var(--color-accent-primary);
+  cursor: pointer;
+  background-color: #0000;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  padding: .75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-flex;
+}
+
+.education-apply-btn:hover {
+  background-color: var(--color-accent-primary);
+  color: #1a1a1a;
+  box-shadow: 0 4px 15px #e59e5866;
+}
+
+.education-btn-group {
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.education-details-btn {
+  color: #fffc;
+  border-color: #ffffff4d;
+}
+
+.education-details-btn:hover {
+  color: #fff;
+  box-shadow: none;
+  background-color: #ffffff1a;
+  border-color: #fff9;
+}
+
+/*# sourceMappingURL=src_app_education_Education_d5927abd.css.map*/

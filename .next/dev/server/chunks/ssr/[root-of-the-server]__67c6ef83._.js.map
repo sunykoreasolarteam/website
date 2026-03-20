@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Elias%20%28Jinkyu%29%20Hyun/.gemini/SUNY%20Korea%20Solar%20Team/src/app/media/page.jsx"],"sourcesContent":["import './Media.css';\n\nexport const metadata = {\n  title: 'Media | SUNY Korea Solar Team',\n  description: 'View the latest media, photography, and press releases covering the progress of the SUNY Korea Solar Team.',\n};\n\nexport default function Media() {\n  return (\n    <div className=\"media-page\">\n      <div className=\"container media-container\">\n        <h1 className=\"media-page-title\">Media</h1>\n        <div className=\"media-placeholder-box\">\n          <p className=\"media-placeholder-text\">\n            This section is yet to be made. We will update the website further in the future.\n          </p>\n        </div>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAAmB;;;;;;8BACjC,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;wBAAE,WAAU;kCAAyB;;;;;;;;;;;;;;;;;;;;;;AAOhD"}}]
+}

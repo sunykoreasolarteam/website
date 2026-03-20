@@ -1,0 +1,46 @@
+/* [project]/src/app/media/Media.css [app-client] (css) */
+.media-page {
+  padding-top: 150px;
+  padding-bottom: var(--space-16);
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  flex-direction: column;
+  display: flex;
+}
+
+.media-container {
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.media-page-title {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-8);
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+}
+
+.media-placeholder-box {
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  border: 1px dashed #fff3;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.media-placeholder-text {
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=src_app_media_Media_f05b4509.css.map*/

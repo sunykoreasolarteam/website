@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Elias%20%28Jinkyu%29%20Hyun/.gemini/SUNY%20Korea%20Solar%20Team/src/app/team/page.jsx"],"sourcesContent":["import './Team.css';\n\nexport const metadata = {\n  title: 'Our Team | SUNY Korea Solar Team',\n  description: 'Meet the multidisciplinary student engineers designing and building our solar racing vehicle.',\n};\n\nexport default function Team() {\n  return (\n    <div className=\"team-page\">\n      <div className=\"container team-container\">\n        <h1 className=\"team-page-title\">Our Team</h1>\n        <div className=\"team-placeholder-box\">\n          <p className=\"team-placeholder-text\">\n            This section is yet to be made. We will update the website further in the future.\n          </p>\n        </div>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAAkB;;;;;;8BAChC,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;wBAAE,WAAU;kCAAwB;;;;;;;;;;;;;;;;;;;;;;AAO/C"}}]
+}
