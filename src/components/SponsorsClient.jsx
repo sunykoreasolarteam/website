@@ -93,9 +93,24 @@ const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academi
             <p className="sponsors-cta-text">
               We welcome partnerships with organizations passionate about supporting student-led engineering, advancing sustainable mobility, and investing in the next generation of technical innovators. Collaborate with us and become a crucial part of our journey to the Bridgestone World Solar Challenge.
             </p>
-            <Link href="/contact" className="btn btn-primary sponsors-cta-btn">
-              Become a Sponsor
-            </Link>
+            <div className="sponsors-cta-buttons">
+              <Link href="/contact" className="btn btn-primary sponsors-cta-btn">
+                Become a Sponsor
+              </Link>
+              <a
+                href="/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet.pdf"
+                download
+                className="btn sponsors-cta-btn sponsors-download-btn"
+                aria-label="Download Sponsorship Packet"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download Sponsorship Packet
+              </a>
+            </div>
           </div>
         </section>
 

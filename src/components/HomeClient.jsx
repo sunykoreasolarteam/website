@@ -162,6 +162,7 @@ const HomeClient = ({ allSponsorLogos }) => {
               <div className="discipline-tag">Aerodynamics</div>
               <div className="discipline-tag">Electrical</div>
               <div className="discipline-tag">Software</div>
+              <div className="discipline-tag">Integrations</div>
               <div className="discipline-tag">Operations</div>
               <div className="discipline-tag">Education</div>
               <div className="discipline-tag">Media</div>

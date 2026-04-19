@@ -140,7 +140,35 @@
   font-weight: 400;
 }
 
+/* Section spacing */
+.team-section {
+  margin-bottom: var(--space-12);
+}
+
+/* Divider between sections */
+.team-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  max-width: 600px;
+  margin: var(--space-4) auto var(--space-12);
+}
+
+/* Sub-Team Leads Grid — smaller cards, 4 columns */
+.subteam-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 /* ── Responsive ───────────────────────────── */
+
+@media (max-width: 1024px) {
+  .subteam-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
   .team-page {
@@ -156,11 +184,22 @@
     max-width: 360px;
     gap: var(--space-8);
   }
+
+  .subteam-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
 }
 
 @media (max-width: 480px) {
   .leadership-grid {
     max-width: 300px;
+  }
+
+  .subteam-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap: var(--space-8);
   }
 }
 
