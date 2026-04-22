@@ -98,7 +98,7 @@ const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academi
                 Become a Sponsor
               </Link>
               <a
-                href="/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet.pdf"
+                href="/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet_2026SpringVer.pdf"
                 download
                 className="btn sponsors-cta-btn sponsors-download-btn"
                 aria-label="Download Sponsorship Packet"
