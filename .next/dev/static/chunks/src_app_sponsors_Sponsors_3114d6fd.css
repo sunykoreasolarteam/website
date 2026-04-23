@@ -16,6 +16,9 @@
   text-align: center;
   margin-bottom: var(--space-16);
   padding-top: var(--space-8);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sponsors-hero-title {
@@ -31,26 +34,14 @@
   color: var(--color-accent-primary);
   text-transform: uppercase;
   letter-spacing: .05em;
-  margin: 0;
+  margin-bottom: var(--space-8);
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-.sponsors-intro-section {
-  max-width: 800px;
-  margin: 0 auto var(--space-16);
-  text-align: center;
-}
-
-.section-heading {
-  font-family: var(--font-display);
-  margin-bottom: var(--space-6);
-  color: var(--color-text-primary);
-  font-size: 2.5rem;
-}
-
-.sponsors-intro-text {
+.sponsors-hero-text {
   color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
   font-size: 1.15rem;
   line-height: 1.8;
 }
@@ -175,31 +166,9 @@
   }
 }
 
-.sponsor-empty-state {
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-10);
-  background: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--color-bg-secondary) 10px, var(--color-bg-secondary) 20px);
-  color: var(--color-text-secondary);
-  opacity: .8;
-  border: 1px dashed #ffffff26;
-  border-radius: 12px;
-  font-style: italic;
-  display: flex;
-}
-
-.empty-state-dot {
-  background-color: var(--color-accent-primary);
-  opacity: .5;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-}
-
 .sponsors-cta-section {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto var(--space-16);
 }
 
 .sponsors-cta-box {
@@ -259,6 +228,32 @@
   background-color: #d18b45;
   border-color: #d18b45;
   box-shadow: 0 4px 15px #e59e5866;
+}
+
+.sponsors-cta-buttons {
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.sponsors-download-btn {
+  color: var(--color-accent-primary);
+  border: 2px solid var(--color-accent-primary);
+  gap: var(--space-2);
+  background-color: #0000;
+  text-decoration: none;
+}
+
+.sponsors-download-btn:hover {
+  background-color: #e59e581a;
+  box-shadow: 0 4px 15px #e59e5833;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsors-download-btn {
+    transition: none;
+  }
 }
 
 @media (min-width: 768px) {

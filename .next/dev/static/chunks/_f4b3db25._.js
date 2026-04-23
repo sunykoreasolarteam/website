@@ -505,7 +505,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "discipline-tag",
-                                            children: "Operations"
+                                            children: "Integrations"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
                                             lineNumber: 165,
@@ -513,7 +513,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "discipline-tag",
-                                            children: "Education"
+                                            children: "Operations"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
                                             lineNumber: 166,
@@ -521,10 +521,18 @@ const HomeClient = ({ allSponsorLogos })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "discipline-tag",
-                                            children: "Media"
+                                            children: "Education"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
                                             lineNumber: 167,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "discipline-tag",
+                                            children: "Media"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/HomeClient.jsx",
+                                            lineNumber: 168,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -542,13 +550,13 @@ const HomeClient = ({ allSponsorLogos })=>{
                                             size: 20
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 170,
+                                            lineNumber: 171,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 169,
+                                    lineNumber: 170,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
@@ -572,7 +580,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "Education Initiative"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 178,
+                                    lineNumber: 179,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -580,7 +588,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "The team supports engineering education through outreach programs, workshops, and hands-on learning opportunities designed to introduce students and the broader community to engineering, renewable energy, and solar vehicle technology."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 179,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -592,24 +600,24 @@ const HomeClient = ({ allSponsorLogos })=>{
                                             size: 20
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 183,
+                                            lineNumber: 184,
                                             columnNumber: 34
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 182,
+                                    lineNumber: 183,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HomeClient.jsx",
-                            lineNumber: 177,
+                            lineNumber: 178,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HomeClient.jsx",
-                        lineNumber: 176,
+                        lineNumber: 177,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -622,7 +630,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "Our Partners"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 191,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -630,7 +638,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "We are actively building partnerships with forward-thinking companies interested in supporting student engineering, sustainable mobility innovation, and cultivating the next generation of technical leaders."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 192,
+                                    lineNumber: 193,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -643,24 +651,24 @@ const HomeClient = ({ allSponsorLogos })=>{
                                                 className: "home-sponsor-logo"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HomeClient.jsx",
-                                                lineNumber: 199,
+                                                lineNumber: 200,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, i, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 198,
+                                            lineNumber: 199,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "scroll-paragraph",
                                         children: "Sponsorship opportunities available."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HomeClient.jsx",
-                                        lineNumber: 203,
+                                        lineNumber: 204,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 195,
+                                    lineNumber: 196,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -672,24 +680,24 @@ const HomeClient = ({ allSponsorLogos })=>{
                                             size: 20
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 207,
+                                            lineNumber: 208,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 206,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HomeClient.jsx",
-                            lineNumber: 190,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HomeClient.jsx",
-                        lineNumber: 189,
+                        lineNumber: 190,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -702,7 +710,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "Get Involved"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 215,
+                                    lineNumber: 216,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -710,7 +718,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                     children: "Join us in pushing the boundaries of sustainable technology or support our mission to build a world-class solar racing vehicle."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 216,
+                                    lineNumber: 217,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -722,7 +730,7 @@ const HomeClient = ({ allSponsorLogos })=>{
                                             children: "Sponsor"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 220,
+                                            lineNumber: 221,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -731,24 +739,24 @@ const HomeClient = ({ allSponsorLogos })=>{
                                             children: "Join"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/HomeClient.jsx",
-                                            lineNumber: 221,
+                                            lineNumber: 222,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/HomeClient.jsx",
-                                    lineNumber: 219,
+                                    lineNumber: 220,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/HomeClient.jsx",
-                            lineNumber: 214,
+                            lineNumber: 215,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/HomeClient.jsx",
-                        lineNumber: 213,
+                        lineNumber: 214,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]

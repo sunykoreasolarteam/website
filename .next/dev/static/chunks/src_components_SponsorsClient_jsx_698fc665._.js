@@ -87,6 +87,7 @@ const SponsorCard = ({ src, title, index })=>{
 _s(SponsorCard, "FFeUOHp3khO8GxeH5/jJeWWdesQ=");
 _c = SponsorCard;
 const SponsorCategory = ({ title, logos })=>{
+    if (!logos || logos.length === 0) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "sponsor-category",
         children: [
@@ -95,10 +96,10 @@ const SponsorCategory = ({ title, logos })=>{
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/SponsorsClient.jsx",
-                lineNumber: 49,
+                lineNumber: 51,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
-            logos.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "sponsor-grid",
                 children: logos.map((src, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCard, {
                         src: src,
@@ -106,45 +107,23 @@ const SponsorCategory = ({ title, logos })=>{
                         index: index
                     }, index, false, {
                         fileName: "[project]/src/components/SponsorsClient.jsx",
-                        lineNumber: 53,
-                        columnNumber: 13
+                        lineNumber: 54,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/src/components/SponsorsClient.jsx",
-                lineNumber: 51,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "sponsor-empty-state",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "empty-state-dot"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/SponsorsClient.jsx",
-                        lineNumber: 58,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "Searching for partners to join our mission"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/SponsorsClient.jsx",
-                        lineNumber: 59,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/SponsorsClient.jsx",
-                lineNumber: 57,
-                columnNumber: 9
+                lineNumber: 52,
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SponsorsClient.jsx",
-        lineNumber: 48,
+        lineNumber: 50,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
 _c1 = SponsorCategory;
-const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academicLogos })=>{
+const SponsorsClient = ({ titleLogos, foundingLogos, goldLogos, silverLogos, bronzeLogos })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "sponsors-page",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -155,90 +134,24 @@ const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academi
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "sponsors-hero-title",
-                            children: "Driving Forward Together"
+                            children: "Driving the Future"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 72,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "sponsors-hero-subtitle",
-                            children: "Engineering the future of sustainable mobility, empowered by our dedicated partners."
+                            children: "Engineering sustainable mobility, empowered by visionary organizations."
                         }, void 0, false, {
                             fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 73,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SponsorsClient.jsx",
-                    lineNumber: 71,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                    className: "sponsors-intro-section",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "section-heading",
-                            children: "Our Partners"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "sponsors-intro-text",
-                            children: "The SUNY Korea Solar Team respectfully acknowledges the vital organizations and institutions that make this project a reality. Through their generous technical guidance, material support, and financial backing, these strategic partnerships allow our student engineers to translate bold conceptual designs into fully realized, competition-ready solar vehicles."
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 78,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/SponsorsClient.jsx",
-                    lineNumber: 76,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                    className: "sponsors-grids-section",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
-                            title: "Principle Partners",
-                            logos: principleLogos
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 84,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
-                            title: "Technical Partners",
-                            logos: technicalLogos
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 85,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
-                            title: "Industry Partners",
-                            logos: industryLogos
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 86,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
-                            title: "Academic Support",
-                            logos: academicLogos
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/SponsorsClient.jsx",
-                            lineNumber: 87,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/SponsorsClient.jsx",
-                    lineNumber: 83,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -251,46 +164,186 @@ const SponsorsClient = ({ principleLogos, technicalLogos, industryLogos, academi
                                 children: "Join Our Mission"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SponsorsClient.jsx",
-                                lineNumber: 92,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "sponsors-cta-text",
-                                children: "We welcome partnerships with organizations passionate about supporting student-led engineering, advancing sustainable mobility, and investing in the next generation of technical innovators. Collaborate with us and become a crucial part of our journey to the Bridgestone World Solar Challenge."
+                                children: "We welcome partnerships with organizations passionate about supporting student-led engineering, advancing sustainable mobility, and investing in the next generation of technical innovators. Learn more about our team, sponsorship structure, and partnership opportunities in our official sponsorship packet."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SponsorsClient.jsx",
-                                lineNumber: 93,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/contact",
-                                className: "btn btn-primary sponsors-cta-btn",
-                                children: "Become a Sponsor"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "sponsors-cta-buttons",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet_2026SpringVer.pdf",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "btn btn-primary sponsors-cta-btn",
+                                        "aria-label": "Download Sponsorship Packet",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                xmlns: "http://www.w3.org/2000/svg",
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                strokeWidth: "2",
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                "aria-hidden": "true",
+                                                style: {
+                                                    marginRight: '8px'
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SponsorsClient.jsx",
+                                                        lineNumber: 86,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                                        points: "7 10 12 15 17 10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SponsorsClient.jsx",
+                                                        lineNumber: 87,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                                        x1: "12",
+                                                        y1: "15",
+                                                        x2: "12",
+                                                        y2: "3"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SponsorsClient.jsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SponsorsClient.jsx",
+                                                lineNumber: 85,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "Sponsorship Packet (PDF)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SponsorsClient.jsx",
+                                        lineNumber: 78,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/contact",
+                                        className: "btn sponsors-download-btn sponsors-cta-btn",
+                                        children: "Contact Us"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SponsorsClient.jsx",
+                                        lineNumber: 92,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/SponsorsClient.jsx",
-                                lineNumber: 96,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SponsorsClient.jsx",
-                        lineNumber: 91,
+                        lineNumber: 72,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/SponsorsClient.jsx",
-                    lineNumber: 90,
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    className: "sponsors-gallery-section",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "section-heading text-center",
+                            style: {
+                                marginBottom: 'var(--space-10)',
+                                fontFamily: 'var(--font-display)',
+                                fontSize: '2.5rem',
+                                textAlign: 'center'
+                            },
+                            children: "Our Proud Partners"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/SponsorsClient.jsx",
+                            lineNumber: 100,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "sponsors-grids-section",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
+                                    title: "Title Partner",
+                                    logos: titleLogos
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
+                                    title: "Founding Partner",
+                                    logos: foundingLogos
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                                    lineNumber: 103,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
+                                    title: "Gold Partner",
+                                    logos: goldLogos
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                                    lineNumber: 104,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
+                                    title: "Silver Partner",
+                                    logos: silverLogos
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                                    lineNumber: 105,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SponsorCategory, {
+                                    title: "Bronze Partner",
+                                    logos: bronzeLogos
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                                    lineNumber: 106,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/SponsorsClient.jsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/SponsorsClient.jsx",
+                    lineNumber: 99,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SponsorsClient.jsx",
-            lineNumber: 69,
+            lineNumber: 64,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/SponsorsClient.jsx",
-        lineNumber: 68,
+        lineNumber: 63,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

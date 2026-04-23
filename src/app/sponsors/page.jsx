@@ -19,17 +19,19 @@ export default function Sponsors() {
       .map(file => `/assets/sponsors/${category}/${file}`);
   };
 
-  const principleLogos = getLogos('principle-partners');
-  const technicalLogos = getLogos('technical-partners');
-  const industryLogos = getLogos('industry-partners');
-  const academicLogos = getLogos('academic-support');
+  const titleLogos = getLogos('title-partner');
+  const foundingLogos = getLogos('founding-partner');
+  const goldLogos = getLogos('gold-partner');
+  const silverLogos = getLogos('silver-partner');
+  const bronzeLogos = getLogos('bronze-partner');
 
   return (
     <SponsorsClient 
-      principleLogos={principleLogos}
-      technicalLogos={technicalLogos}
-      industryLogos={industryLogos}
-      academicLogos={academicLogos}
+      titleLogos={titleLogos}
+      foundingLogos={foundingLogos}
+      goldLogos={goldLogos}
+      silverLogos={silverLogos}
+      bronzeLogos={bronzeLogos}
     />
   );
 }

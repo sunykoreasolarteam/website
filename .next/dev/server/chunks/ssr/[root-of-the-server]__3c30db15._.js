@@ -79,18 +79,20 @@ function Sponsors() {
         if (!__TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].existsSync(dirPath)) return [];
         return __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].readdirSync(dirPath).filter((f)=>f.match(/\.(png|jpg|jpeg|svg)$/i)).map((file)=>`/assets/sponsors/${category}/${file}`);
     };
-    const principleLogos = getLogos('principle-partners');
-    const technicalLogos = getLogos('technical-partners');
-    const industryLogos = getLogos('industry-partners');
-    const academicLogos = getLogos('academic-support');
+    const titleLogos = getLogos('title-partner');
+    const foundingLogos = getLogos('founding-partner');
+    const goldLogos = getLogos('gold-partner');
+    const silverLogos = getLogos('silver-partner');
+    const bronzeLogos = getLogos('bronze-partner');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SponsorsClient$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-        principleLogos: principleLogos,
-        technicalLogos: technicalLogos,
-        industryLogos: industryLogos,
-        academicLogos: academicLogos
+        titleLogos: titleLogos,
+        foundingLogos: foundingLogos,
+        goldLogos: goldLogos,
+        silverLogos: silverLogos,
+        bronzeLogos: bronzeLogos
     }, void 0, false, {
         fileName: "[project]/src/app/sponsors/page.jsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
