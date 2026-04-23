@@ -65,34 +65,27 @@ const SponsorsClient = ({ titleLogos, foundingLogos, goldLogos, silverLogos, bro
         
         <section className="sponsors-hero-section">
           <h1 className="sponsors-hero-title">Driving the Future</h1>
-          <p className="sponsors-hero-subtitle">Engineering sustainable mobility, empowered by visionary organizations.</p>
-        </section>
-
-        <section className="sponsors-cta-section">
-          <div className="sponsors-cta-box">
-            <h2 className="sponsors-cta-heading">Join Our Mission</h2>
-            <p className="sponsors-cta-text">
-              We welcome partnerships with organizations passionate about supporting student-led engineering, advancing sustainable mobility, and investing in the next generation of technical innovators. Learn more about our team, sponsorship structure, and partnership opportunities in our official sponsorship packet.
-            </p>
-            <div className="sponsors-cta-buttons">
-              <a
-                href="/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet_2026SpringVer.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary sponsors-cta-btn"
-                aria-label="Download Sponsorship Packet"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{marginRight: '8px'}}>
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Sponsorship Packet (PDF)
-              </a>
-              <Link href="/contact" className="btn sponsors-download-btn sponsors-cta-btn">
-                Contact Us
-              </Link>
-            </div>
+          <p className="sponsors-hero-text">
+            We partner with visionary organizations passionate about advancing sustainable mobility and student-led engineering. Explore our partnership opportunities.
+          </p>
+          <div className="sponsors-cta-buttons" style={{marginTop: 'var(--space-8)'}}>
+            <a
+              href="/assets/Sponsorship-Packet/SUNY_Korea_Solar_Team_Sponsorship_Packet_2026SpringVer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary sponsors-cta-btn"
+              aria-label="Download Sponsorship Packet"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{marginRight: '8px'}}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Sponsorship Packet (PDF)
+            </a>
+            <Link href="/contact" className="btn sponsors-download-btn sponsors-cta-btn">
+              Contact Us
+            </Link>
           </div>
         </section>
 

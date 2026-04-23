@@ -1,5 +1,8 @@
 {
+  "/car/page": "app/car/page.js",
   "/contact/page": "app/contact/page.js",
+  "/education/page": "app/education/page.js",
+  "/history/page": "app/history/page.js",
   "/page": "app/page.js",
   "/sponsors/page": "app/sponsors/page.js",
   "/team/page": "app/team/page.js"
